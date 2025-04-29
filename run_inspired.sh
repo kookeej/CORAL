@@ -1,0 +1,11 @@
+python train.py \
+  --data_name inspired \
+  --alpha 0.5 \
+  --beta 0.2 \
+  --query_used_info c l d \
+  --doc_used_info m pref \
+  --bf16 \
+  --negative_sample 16 \
+  --learning_rate 1e-4 \
+  --batch_size 10 \
+  --wandb_project CORAL # (Optional) Remove this if you are not using wandb.

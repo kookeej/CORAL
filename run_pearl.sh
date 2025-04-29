@@ -1,0 +1,12 @@
+python train.py \
+  --data_name pearl \
+  --alpha 0.5 \
+  --beta 0.3 \
+  --query_used_info c l d \
+  --doc_used_info m pref \
+  --bf16 \
+  --negative_sample 24 \
+  --learning_rate 5e-5 \
+  --batch_size 8 \
+  --patienc 3 \
+  --wandb_project CORAL # (Optional) Remove this if you are not using wandb.
